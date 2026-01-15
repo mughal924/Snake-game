@@ -64,3 +64,15 @@ document.addEventListener("keydown", function (e) {
 });
 
 startBtn.addEventListener("click", startGame);
+let resetBtn = document.getElementById("resetBtn");
+function resetGame() {
+  clearInterval(game);      
+  snake = [];               
+  direction = 1;
+  food = 0;
+
+  for (let i = 0; i < 100; i++) {
+    boxes[i].className = "box";
+  }
+}
+resetBtn.onclick = resetGame;
