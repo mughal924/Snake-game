@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgoBN6g8SH_Mks3r2u6g6p2ZepsILhcZO8Nw&s');
+        background-size: 100% ;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed; 
+    }
+
+    h2 {
+      margin-top: 20px;
+        color: #be1616;
+    }
+
+    /* START BUTTON */
+    button {
+      margin: 15px;
+      padding: 12px 30px;
+      font-size: 18px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    button:hover {
+background: rgb(128, 26, 0);
+    }
+
+    /* GAME BOARD */
+    .board {
+      width: 400px;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(10, 40px);
+      margin: auto;
+      border: 4px solid #222;
+      background:none;
+      
+    }
+
+    /* BOX */
+    .box {
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box; /* ⭐ MAIN FIX */
+      border: 1px solid #0e0d0d;
+    
+    }
+
+    .snake {
+      background: rgb(3, 3, 3);
+    }
+
+    .food {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🐍 Snake Game</h2>
+<button id="startBtn">Start Game</button>
+
+<div class="board" id="board"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
